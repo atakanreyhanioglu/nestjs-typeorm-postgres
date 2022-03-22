@@ -20,6 +20,6 @@ $ docker compose up
 
 ## Stay in touch
 
-- Author - Atakan Reyhanioğlu 
+- Author - Atakan Reyhanioglu 
 - E-Mail - atakan.reyhanioglu@gmail.com
 
