@@ -23,3 +23,6 @@ $ docker compose up
 - Author - Atakan Reyhanioglu 
 - E-Mail - atakan.reyhanioglu@gmail.com
 
+######Hope you will find that template useful to get you started.
+
+Kindest regards.
