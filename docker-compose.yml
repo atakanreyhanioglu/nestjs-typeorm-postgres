@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+    api:
+      container_name: api
+      build:
+        dockerfile: Dockerfile
+        context:  .
+      ports:
+        - "8080:8080"
+      volumes:
+        - ./:/usr/src/app
+      depends_on:
+        - postgres
+      env_file:
+        - docker.api.env
+
+    postgres:
+        container_name: docker-postgres
+        image: postgres:12
+        restart: always
+        env_file:
+          - docker.postgres.env
+        volumes:
+          - ./db-data:/var/lib/postgresql/data
+        ports:
+          - "5432:5432"
